@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alonso-dev</title>
-</head>
-<body>
-    <main>
-        <h3>Tarefas</h3>
-        <ol>
-            <li>Criar lista de tarefas</li>
-            <li>Criar o site</li>
-            <li>desenvolver a aplicação da alura Js</li>
-            <li>pensar em outras tarefas</li>            
-        </ol>
-        <a href="{{url_for("tag")}}">Marvin e tags</a>
-    </main>
-</body>
-</html>
+{% extends "base.html" %}
+
+    {% block content %}
+    <h1>Em construção =p</h1>
+    <div class="card">
+        <div class="cardheader">ToDo List</div>
+        <div class="card-body">
+            <h5 class="card-title">Lista de tarefas</h5>
+            <p class="card-text">Lista de tarefas feita em python com banco de dados sqlite</p>
+            <a href="#" class="btn btn-primary">go</a>
+        </div>
+    </div>
+    {% endblock content%}
