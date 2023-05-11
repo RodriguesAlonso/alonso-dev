@@ -29,13 +29,17 @@ def tag():
 def tarefas():
     return render_template('tarefas.html')
 
-@app.route('/test', methods = ["GET"])
+@app.route('/test', methods = ["POST"])
 def test():
     conn = mysql.connect()
     my_cursor = conn.cursor()
-    my_cursor.execute("SELECT * FROM todo")            
-    rows = my_cursor.fetchall()    
-    print(rows)
+    my_cursor.execute("INSERT INTO todo(titulo, tarefa)VALUES(tarefa03, fazer tarefa03)")
+    conn.commit()
+    flash('adicionado com sucesso!')
+    my_cursor.close()
+    conn.close()
+    return redirect('/')
+
     
     
 if __name__ == '__main__':
