@@ -25,15 +25,7 @@ def index():
 @app.route('/tag')
 def tag():
     return render_template('tags.html')
-
-@app.route('/test', methods = ["GET"])
-def test():
-    conn = mysql.connect()
-    my_cursor = conn.cursor()
-    my_cursor.execute("SELECT * FROM todo")            
-    rows = my_cursor.fetchall()    
-    print(rows)
-    
+   
     
 if __name__ == '__main__':
     app.run()
