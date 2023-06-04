@@ -1,1 +1,1 @@
-web: gunicorn /alonso_dev/app:app
+web: gunicorn app:./alonso_dev/app
