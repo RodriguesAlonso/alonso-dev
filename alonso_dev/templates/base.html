@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="{{ url_for('static',filename= "/css/style.css")}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename = '/css/style.css') }}">
     {{ bootstrap.load_css() }}    
 
     <title>Alonso-dev</title>
@@ -16,20 +16,20 @@
     <header>
         <nav class="navbar navbar-expand-sm bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="{{ url_for('index')}}">Alonso-dev</a>
+              <a class="navbar-brand" href="{{ url_for('site.index')}}">Alonso-dev</a>
               <button id="btn_hamburgue" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span id="icon_hamburgue" class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ url_for('index')}}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('site.index')}}">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('tag')}}">GPT falando de tags</a>
+                    <a class="nav-link" href="{{ url_for('site.tag')}}">GPT falando de tags</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('tarefas')}}">Tarefas</a>
+                    <a class="nav-link" href="{{ url_for('site.tarefas')}}">Tarefas</a>
                   </li>
                   
                   
