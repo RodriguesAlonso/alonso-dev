@@ -1,5 +1,5 @@
 from flask import Flask
-from alonso_dev.ext import site
+from ext import site
 
 def create_app():
     app = Flask(__name__)
