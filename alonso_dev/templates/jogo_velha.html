@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+<h1 id="jogo_da_velha">Jogo da Velha</h1>
+{% endblock titulo %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename = '/css/jogo_da_velha.css')}}">
+{% endblock extra_css%}
+
+
+{% block content %}
+<section>
+    <p>
+        O jogo da velha, também conhecido como jogo do galo ou três em linha, é um jogo de tabuleiro simples e popular.
+        Ele é jogado em uma grade 3x3, onde dois jogadores alternam para marcar um X ou um O em uma célula vazia do
+        tabuleiro. O objetivo do jogo é conseguir colocar três símbolos iguais em linha horizontal, vertical ou
+        diagonal. O jogador que conseguir essa sequência primeiro é o vencedor.
+        Se todas as células do tabuleiro forem preenchidas e não houver um vencedor, o jogo é considerado um empate.
+    </p>
+    <!--
+
+        <div class="jogo_da_velha">
+            <img id="velha_tabuleiro" src="{{ url_for('static', filename='/img/tabuleiro.png')}}" alt="">
+            <img id="x1" src="{{ url_for('static', filename='/img/x1.png')}}" alt="">
+        </div>
+    -->
+    
+</section>
+ 
+
+{% endblock content %}
+
+{% block extra_js %}
+<script src="{{ url_for ('static', filename = '/js/jogo_da_velha.js')}}"></script>
+{% endblock extra_js%}

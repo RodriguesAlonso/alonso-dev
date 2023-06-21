@@ -15,3 +15,19 @@ def tag():
 @bp.route('/tarefas')
 def tarefas():
     return render_template('tarefas.html')
+
+@bp.route('/jogo_da_velha')
+def jogo_velha():
+    return render_template('jogo_velha.html')
+
+@bp.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
+@bp.route('/melhores_jogos_do_mundo')
+def jogos():
+    return render_template('jogos.htlm')
+
+@bp.route('/testes')
+def teste():
+    return render_template('testes.html')

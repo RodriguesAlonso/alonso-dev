@@ -1,13 +1,59 @@
 {% extends "base.html" %}
 
-    {% block content %}
-    <h1>Em construção =p</h1>
-    <div class="card" style="width: 18rem;">
-        <div class="cardheader">ToDo List</div>
-        <div class="card-body">
-            <h5 class="card-title">Lista de tarefas</h5>
-            <p class="card-text">Lista de tarefas feita em python com banco de dados sqlite</p>
-            <a href="#" class="btn btn-primary">go go</a>
-        </div>
-    </div>   
-    {% endblock content%}
+{% block content %}
+<header>
+    <h1>Meu Portfólio</h1>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Eu sou um desenvolvedor web apaixonado por criar sites incríveis.</p>
+</section>
+
+<section id="projetos">
+    <h2>Meus Projetos</h2>
+    <article>
+        <h3>Projeto 1</h3>
+        <p>Descrição do projeto 1.</p>
+    </article>
+    <article>
+        <h3>Projeto 2</h3>
+        <p>Descrição do projeto 2.</p>
+    </article>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Você pode me contatar pelo email: exemplo@email.com</p>
+</section>
+
+
+<h3>Try This</h3> 
+<form> 
+<textarea id="yourcode" cols="40" rows="10">import turtle
+
+t = turtle.Turtle()
+t.forward(100)
+
+print "Hello World" 
+</textarea><br /> 
+<button type="button" onclick="runit()">Run</button> 
+</form> 
+<pre id="output" ></pre> 
+<!-- If you want turtle graphics include a canvas -->
+<div id="mycanvas"></div> 
+
+{% endblock content%}
+
+{% block extra_js %}
+    <script src="url_for('static', filename = '/js/sript.js')"></script>   
+    <script src="url_for('static', filename= '/js/skulp/skulpt-stdlib.js')"></script> 
+    <script src="url_for('static', filename= '/js/skulp/skulpt.min.js')"></script>     
+{% endblock extra_js%}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Outline&family=Chokokutai&family=Comforter+Brush&family=Creepster&family=Mr+Dafoe&family=Nosifer&family=Orbit&family=Rubik+Iso&display=swap');
+
+
+:root{
+    font-family: 'Bungee Hairline', cursive;
+    font-family: 'Bungee Outline', cursive;
+    font-family: 'Chokokutai', cursive;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Creepster', cursive;
+    font-family: 'Mr Dafoe', cursive;
+    font-family: 'Nosifer', cursive;
+    font-family: 'Orbit', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+}
+body{
+    padding: 15px;
+}
+.jogo_da_velha{
+    background-image: src="{{ url_for('static', filename='/img/tabuleiro.png')}}";
+    width: 700px;
+    height: 700px
+}
+#jogo_da_velha{
+    font-family: 'Comforter Brush', cursive;
+    font-size: 12em;
+}
+#velha_tabuleiro{
+    display: flex;
+    float: right;
+}
+#x_um{
+    display: flex;
+    float:inherit;
+    align-items: end;
+}
